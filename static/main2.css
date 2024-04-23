@@ -1,0 +1,71 @@
+@import url('./media.css');
+
+body {
+    margin: 10;
+    padding: 15;
+    color: rgb(45, 46, 29);
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: inherit;
+    background-color: rgb(47, 167, 167);
+    font-weight: 50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    color: rgb(45, 46, 29);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.side-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.side-info > div {
+    margin-bottom: 30px;
+}
+
+.side-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer section {
+    padding: 0 10px;
+}

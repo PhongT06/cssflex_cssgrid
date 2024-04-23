@@ -1,0 +1,91 @@
+/* CSS Styling */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    background-color: #010d37;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(41, 38, 38);
+}
+
+.grid-container {
+    height: 500px;
+    width: 1000px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 200px;
+    gap: 30px;
+}
+
+.hero-image {
+    background: url('./images/beach.jpeg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+.beach {
+    grid-column: 1 / 2;
+    grid-row: 2 / 1;
+    font-size: 25px;
+    height: 100%;
+}
+
+.bright > h1 {
+    margin-top: 10px;
+}
+
+.dive {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dive > button {
+    width: 150px;
+    height: 50px;
+    background-color: #000929;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* margin-top: 100px; */
+}
+
+.new {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    background-color: #000929;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    color: white;
+    padding: 20px;
+}
+
+.new > h2 {
+    color: #e9aa52;
+}
+
+.new > article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-article:nth-child(2)::before, .news-article:nth-child(2)::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
